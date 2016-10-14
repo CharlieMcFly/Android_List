@@ -12,9 +12,13 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
+        // Déclarer notre liste
+        /*
         ListView listView = (ListView) findViewById(R.id.my_simple_list);
+        */
 
-        // Defined Array values to show in ListView
+        // Donner des valeurs aux éléments de notre liste
+        /*
         String[] values = new String[] { "Item n°1",
                 "Item n°2",
                 "Item n°3",
@@ -24,19 +28,21 @@ public class ListActivity extends AppCompatActivity {
                 "Item n°7",
                 "Item n°8",
         };
+        */
 
-        // Define a new Adapter
-        // First parameter - Context
-        // Second parameter - Layout for the row
-        // Third parameter - ID of the TextView to which the data is written
-        // Forth - the Array of data
-
+        // Definir un nouveau adapter
+        // Premier paramètre - Context
+        // Deuxième paramètre - Layout pour la ligne (par défaut, celui de base)
+        // Troisième paramètre - ID du text du layout
+        // Quatrième - Le tableau des données
+        /*
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
+        */
 
-
-        // Assign adapter to ListView
+        // Assigner l'adapter à la liste
+        /*
         listView.setAdapter(adapter);
-
+        */
     }
 }

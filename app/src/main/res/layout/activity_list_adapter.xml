@@ -10,11 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="fr.univ_lille1.android.listapplication.ListAdapterActivity">
 
-    <ListView
+ <!--   <ListView
         android:id="@+id/my_adapter_list"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">
-    </ListView>
+    </ListView>-->
 
 
 </RelativeLayout>

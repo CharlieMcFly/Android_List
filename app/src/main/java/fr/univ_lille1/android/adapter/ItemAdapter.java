@@ -23,20 +23,29 @@ public class ItemAdapter extends ArrayAdapter<Item> {
         super(context, 0, items);
     }
 
-    @Override
+
+
+ /*   @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Get the data row_item for this position
+
+        // Récupère l'item à un position précise
         Item item = getItem(position);
-        // Check if an existing view is being reused, otherwise inflate the view
+
+        // Vérifie s'il existe une view, si oui récupère la vue de la ligne pour l'item
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.row_item, parent, false);
         }
-        // Lookup view for data population
+
+        // Déclare les différents champs de la vue
         TextView itemNumero = (TextView) convertView.findViewById(R.id.numero);
         TextView itemTitre = (TextView) convertView.findViewById(R.id.titre);
-        // Populate the data into the template view using the data object
+
+        // Met les éléments demandés dans les champs (NB : cela doit être une string)
         itemNumero.setText(String.valueOf(item.numero));
         itemTitre.setText(String.valueOf(item.titre));
-        // Return the completed view to render on screen
+
+        // Retourne la vue de la ligne
         return convertView;
-    }}
+    }*/
+
+}

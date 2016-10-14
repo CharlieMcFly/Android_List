@@ -18,11 +18,14 @@ public class ListAdapterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_adapter);
 
-
+       /* // Récupération des items
         ArrayList<Item> items = Item.getitems();
+        // Création de l'adapteur d'item pour la ligne
         ItemAdapter adapter = new ItemAdapter(this, items);
+        // Déclarer la liste view
         ListView listView = (ListView) findViewById(R.id.my_adapter_list);
+        // Ajouter notre adapter à la liste
         listView.setAdapter(adapter);
-
+*/
     }
 }

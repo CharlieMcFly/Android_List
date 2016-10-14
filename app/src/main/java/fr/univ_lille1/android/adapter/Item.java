@@ -6,6 +6,9 @@ import java.util.ArrayList;
  * Created by CHARLIE on 14/10/2016.
  */
 
+/**
+ * Class Item, qui créer des items pour les différentes lists
+ */
 public class Item {
 
     public int numero;
