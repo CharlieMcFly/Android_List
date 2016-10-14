@@ -22,22 +22,22 @@ public class RecyclerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
 
+   /*     // Déclarer le recycler view
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_list);
 
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
-        mRecyclerView.setHasFixedSize(true);
-
-        // use a linear layout manager
+        // Déclarer notre layoutManager
         mLayoutManager = new LinearLayoutManager(this);
+        // Set le layoutManager à notre recycler
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // My list
+        // Notre contenu
         DummyContent dummyContents = new DummyContent();
 
-        // specify an adapter (see also next example)
+        // Création de notre Adapter(list d'item, listener)
         mAdapter = new MyItemRecyclerViewAdapter(dummyContents.ITEMS, null);
-        mRecyclerView.setAdapter(mAdapter);
+
+        // Ajouter l'adapter à notre recycler view
+        mRecyclerView.setAdapter(mAdapter);*/
 
     }
 }
