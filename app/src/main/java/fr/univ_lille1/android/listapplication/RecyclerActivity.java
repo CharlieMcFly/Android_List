@@ -7,6 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.List;
+
 import fr.univ_lille1.android.adapter.Item;
 import fr.univ_lille1.android.adapter.ItemAdapterRecycler;
 
@@ -20,20 +22,19 @@ public class RecyclerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
+/*
+        // Récupérer la liste d'item
+        List<Item> myItems = Item.getitems();
 
-       /* // Déclarer le recycler view
+        // Définir le recycler view et le layout manager
         mRecyclerView = (RecyclerView) findViewById(R.id.list);
-
-        // Déclarer notre layoutManager
         mLayoutManager = new LinearLayoutManager(this);
-        // Set le layoutManager à notre recycler
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // Création de notre Adapter(list d'item, listener)
-        mAdapter = new ItemAdapterRecycler(Item.getitems(), this);
-
-        // Ajouter l'adapter à notre recycler view
-        mRecyclerView.setAdapter(mAdapter);*/
+        // Adapter pour la liste d'items
+        mAdapter = new ItemAdapterRecycler(myItems, getApplicationContext());
+        mRecyclerView.setAdapter(mAdapter);
+        */
 
     }
 }
