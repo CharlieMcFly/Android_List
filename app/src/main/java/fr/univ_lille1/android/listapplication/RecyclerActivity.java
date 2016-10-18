@@ -22,8 +22,7 @@ public class RecyclerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
-/*
-        // Récupérer la liste d'item
+       /* // Récupérer la liste d'item
         List<Item> myItems = Item.getitems();
 
         // Définir le recycler view et le layout manager
@@ -33,8 +32,7 @@ public class RecyclerActivity extends AppCompatActivity {
 
         // Adapter pour la liste d'items
         mAdapter = new ItemAdapterRecycler(myItems, getApplicationContext());
-        mRecyclerView.setAdapter(mAdapter);
-        */
+        mRecyclerView.setAdapter(mAdapter);*/
 
     }
 }
