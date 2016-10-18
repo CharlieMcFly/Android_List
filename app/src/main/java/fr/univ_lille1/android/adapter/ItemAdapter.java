@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -22,14 +23,14 @@ public class ItemAdapter extends ArrayAdapter<Item> {
     public ItemAdapter(Context context, ArrayList<Item> items) {
         super(context, 0, items);
     }
-
-
-
- /*   @Override
+/*
+    @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
         // Récupère l'item à un position précise
+
         Item item = getItem(position);
+
 
         // Vérifie s'il existe une view, si oui récupère la vue de la ligne pour l'item
         if (convertView == null) {
@@ -38,14 +39,23 @@ public class ItemAdapter extends ArrayAdapter<Item> {
 
         // Déclare les différents champs de la vue
         TextView itemNumero = (TextView) convertView.findViewById(R.id.numero);
-        TextView itemTitre = (TextView) convertView.findViewById(R.id.titre);
+        final TextView itemTitre = (TextView) convertView.findViewById(R.id.titre);
 
         // Met les éléments demandés dans les champs (NB : cela doit être une string)
         itemNumero.setText(String.valueOf(item.numero));
         itemTitre.setText(String.valueOf(item.titre));
 
+        // Ajouter un click
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(), "Titre : " + itemTitre.getText(),
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+
         // Retourne la vue de la ligne
         return convertView;
-    }*/
-
+    }
+*/
 }

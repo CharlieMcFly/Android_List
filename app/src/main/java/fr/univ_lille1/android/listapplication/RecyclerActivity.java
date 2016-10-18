@@ -4,12 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import fr.univ_lille1.android.recyler.MyItemRecyclerViewAdapter;
-import fr.univ_lille1.android.recyler.dummy.DummyContent;
+import fr.univ_lille1.android.adapter.Item;
+import fr.univ_lille1.android.adapter.ItemAdapterRecycler;
 
 public class RecyclerActivity extends AppCompatActivity {
 
@@ -22,19 +21,16 @@ public class RecyclerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
 
-   /*     // Déclarer le recycler view
-        mRecyclerView = (RecyclerView) findViewById(R.id.recycler_list);
+       /* // Déclarer le recycler view
+        mRecyclerView = (RecyclerView) findViewById(R.id.list);
 
         // Déclarer notre layoutManager
         mLayoutManager = new LinearLayoutManager(this);
         // Set le layoutManager à notre recycler
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        // Notre contenu
-        DummyContent dummyContents = new DummyContent();
-
         // Création de notre Adapter(list d'item, listener)
-        mAdapter = new MyItemRecyclerViewAdapter(dummyContents.ITEMS, null);
+        mAdapter = new ItemAdapterRecycler(Item.getitems(), this);
 
         // Ajouter l'adapter à notre recycler view
         mRecyclerView.setAdapter(mAdapter);*/

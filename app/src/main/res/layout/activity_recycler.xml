@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     tools:context="fr.univ_lille1.android.listapplication.RecyclerActivity">
 
-    <include layout="@layout/fragment_item_list" />
+    <include layout="@layout/fragment_list" />
 
 </RelativeLayout>
